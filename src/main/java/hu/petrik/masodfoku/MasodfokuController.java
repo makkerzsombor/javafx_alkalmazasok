@@ -33,7 +33,6 @@ public class MasodfokuController {
         double diszkriminans = masodikertek * masodikertek - 4.0 * elsoertek * harmadikertek;
         if (diszkriminans == 0){
             double r1 = (-masodikertek + Math.pow(diszkriminans, 0.5)) / (2.0 * elsoertek);
-            //TODO: 1 érték lesz
             xErtek1.setText("x1 = " + String.valueOf(r1));
             xErtek2.setText("");
         }else if(diszkriminans < 0){
@@ -42,7 +41,6 @@ public class MasodfokuController {
         }else{
             double r1 = (-masodikertek + Math.pow(diszkriminans, 0.5)) / (2.0 * elsoertek);
             double r2 = (-masodikertek - Math.pow(diszkriminans, 0.5)) / (2.0 * elsoertek);
-                //TODO: 2 érték lesz
             xErtek1.setText(String.valueOf("x1 = " + r1));
             xErtek2.setText(String.valueOf("x2 = " + r2));
         }
